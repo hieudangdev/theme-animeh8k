@@ -1,7 +1,7 @@
 @extends('themes::layout')
 
 @php
-    $menu = \Ophim\Core\Models\Menu::getTree();
+    $menu = \Kho8k\Core\Models\Menu::getTree();
 @endphp
 
 @push('header')

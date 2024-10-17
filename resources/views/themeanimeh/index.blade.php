@@ -2,7 +2,7 @@
 
 
 @php
-    use Ophim\Core\Models\Movie;
+    use Kho8k\Core\Models\Movie;
     $recommendations = Cache::remember('site.movies.recommendations', setting('site_cache_ttl', 5 * 60), function () {
         return Movie::where('is_recommended', true)
             ->limit(get_theme_option('recommendations_limit', 10))

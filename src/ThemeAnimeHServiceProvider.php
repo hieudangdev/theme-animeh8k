@@ -1,6 +1,6 @@
 <?php
 
-namespace Ophim\ThemeAnimeH;
+namespace Kho8k\ThemeAnimeH;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -24,9 +24,9 @@ class ThemeAnimeHServiceProvider extends ServiceProvider
     {
         config(['themes' => array_merge(config('themes', []), [
             'animeh' => [
-                'name' => 'Theme AnimeH',
-                'author' => 'opdlnf01@gmail.com',
-                'package_name' => 'ophimcms/theme-animeh',
+                'name' => 'Theme AnimeH8k',
+                'author' => 'kho8k@gmail.com',
+                'package_name' => 'kho8k/theme-animeh',
                 'publishes' => ['animeh-assets'],
                 'preview_image' => '',
                 'options' => [

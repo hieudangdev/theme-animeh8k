@@ -20,7 +20,7 @@
             <div class="">
                 <select class="form-control" id="category" name="filter[category]" form="form-search">
                     <option value="">Tất cả thể loại</option>
-                    @foreach (\Ophim\Core\Models\Category::fromCache()->all() as $item)
+                    @foreach (\Kho8k\Core\Models\Category::fromCache()->all() as $item)
                         <option value="{{ $item->id }}" @if ((isset(request('filter')['category']) && request('filter')['category'] == $item->id) ||
                             (isset($category) && $category->id == $item->id)) selected @endif>
                             {{ $item->name }}</option>
@@ -30,7 +30,7 @@
             <div class="">
                 <select class="form-control" name="filter[region]" form="form-search">
                     <option value="">Tất cả quốc gia</option>
-                    @foreach (\Ophim\Core\Models\Region::fromCache()->all() as $item)
+                    @foreach (\Kho8k\Core\Models\Region::fromCache()->all() as $item)
                         <option value="{{ $item->id }}" @if ((isset(request('filter')['region']) && request('filter')['region'] == $item->id) ||
                             (isset($region) && $region->id == $item->id)) selected @endif>
                             {{ $item->name }}</option>

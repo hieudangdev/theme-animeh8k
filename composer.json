@@ -1,30 +1,30 @@
 {
-    "name": "ophimcms/theme-animeh",
-    "description": "Ophim's animeh theme",
+    "name": "kho8k/theme-animeh8k",
+    "description": "Kho8k's animeh8k theme",
     "type": "library",
     "authors": [
         {
-            "name": "ophimcms",
-            "email": "opdlnf01@gmail.com"
+            "name": "kho8k",
+            "email": "kho8k@gmail.com"
         }
     ],
     "require": {
         "laravel/framework": "^6|^7|^8",
         "ckfinder/ckfinder-laravel-package": "v3.5.2.1",
-        "hacoidev/ophim-core": "^1.0.0"
+         "khophim8k/kho8k-core": "^2.0"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Ophim\\ThemeAnimeH\\": "src/",
-            "Ophim\\ThemeAnimeH\\Database\\Factories\\": "database/factories/",
-            "Ophim\\ThemeAnimeH\\Database\\Seeders\\": "database/seeders/"
+            "Kho8k\\ThemeAnimeH\\": "src/",
+            "Kho8k\\ThemeAnimeH\\Database\\Factories\\": "database/factories/",
+            "Kho8k\\ThemeAnimeH\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ophim\\ThemeAnimeH\\ThemeAnimeHServiceProvider"
+                "Kho8k\\ThemeAnimeH\\ThemeAnimeHServiceProvider"
             ]
         }
     },

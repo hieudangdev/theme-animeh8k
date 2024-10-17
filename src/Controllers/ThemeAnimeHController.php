@@ -1,17 +1,17 @@
 <?php
 
-namespace Ophim\ThemeAnimeH\Controllers;
+namespace Kho8k\ThemeAnimeH\Controllers;
 
 use Backpack\Settings\app\Models\Setting;
 use Illuminate\Http\Request;
-use Ophim\Core\Models\Actor;
-use Ophim\Core\Models\Catalog;
-use Ophim\Core\Models\Category;
-use Ophim\Core\Models\Director;
-use Ophim\Core\Models\Episode;
-use Ophim\Core\Models\Movie;
-use Ophim\Core\Models\Region;
-use Ophim\Core\Models\Tag;
+use Kho8k\Core\Models\Actor;
+use Kho8k\Core\Models\Catalog;
+use Kho8k\Core\Models\Category;
+use Kho8k\Core\Models\Director;
+use Kho8k\Core\Models\Episode;
+use Kho8k\Core\Models\Movie;
+use Kho8k\Core\Models\Region;
+use Kho8k\Core\Models\Tag;
 
 use Illuminate\Support\Facades\Cache;
 
@@ -240,7 +240,7 @@ class ThemeAnimeHController
 
             [$relation_table, $relation_field, $relation_val] = array_merge($relation_config, ['', '', '']);
             try {
-                $movies = \Ophim\Core\Models\Movie::when($relation_table, function ($query) use ($relation_table, $relation_field, $relation_val, $field, $val) {
+                $movies = \Kho8k\Core\Models\Movie::when($relation_table, function ($query) use ($relation_table, $relation_field, $relation_val, $field, $val) {
                     $query->whereHas($relation_table, function ($rel) use ($relation_field, $relation_val, $field, $val) {
                         $rel->where($relation_field, $relation_val)->where(array_combine(explode(",", $field), explode(",", $val)));
                     });

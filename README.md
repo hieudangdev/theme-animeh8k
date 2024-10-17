@@ -17,11 +17,11 @@
 https://github.com/hacoidev/ophim-core
 
 ## Install
-1. Tại thư mục của Project: `composer require ophimcms/theme-animeh`
+1. Tại thư mục của Project: `composer require kho8k/theme-animeh`
 2. Kích hoạt giao diện trong Admin Panel
 
 ## Update
-1. Tại thư mục của Project: `composer update ophimcms/theme-animeh`
+1. Tại thư mục của Project: `composer update kho8k/theme-animeh`
 2. Re-Activate giao diện trong Admin Panel
 
 ## Note
@@ -41,5 +41,5 @@ https://github.com/hacoidev/ophim-core
 ####
 
 ### Custom View Blade
-- File blade gốc trong Package: `/vendor/ophimcms/ophim-animeh/resources/views/themeanimeh`
+- File blade gốc trong Package: `/vendor/kho8k/ophim-animeh/resources/views/themeanimeh`
 - Copy file cần custom đến: `/resources/views/vendor/themes/animeh`

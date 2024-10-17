@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Ophim\ThemeAnimeH\Controllers\ThemeAnimeHController;
+use Kho8k\ThemeAnimeH\Controllers\ThemeAnimeHController;
 
 // --------------------------
 // Custom Backpack Routes
